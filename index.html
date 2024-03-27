@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive World Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive World Map</h1>
+    </header>
+    <div id="map-container">
+        <img src="world_map_continents.jpeg" alt="World Map" id="world-map">
+        <!-- Dots representing continents -->
+        <div class="dot dot-africa" id="dot-africa"></div>
+        <div class="dot dot-asia" id="dot-asia"></div>
+        <div class="dot dot-europe" id="dot-europe"></div>
+        <div class="dot dot-north-america" id="dot-north-america"></div>
+        <div class="dot dot-south-america" id="dot-south-america"></div>
+        <div class="dot dot-oceania" id="dot-oceania"></div>
+        <div class="dot dot-antarctica" id="dot-antarctica"></div>
+        <!-- Continent indicators -->
+        <div class="indicator" id="africa"></div>
+        <div class="indicator" id="asia"></div>
+        <div class="indicator" id="europe"></div>
+        <div class="indicator" id="north-america"></div>
+        <div class="indicator" id="south-america"></div>
+        <div class="indicator" id="oceania"></div>
+        <div class="indicator" id="antarctica"></div>
+    </div>
+    <div id="info-container">
+        <h2 id="continent-name"></h2>
+        <p id="continent-info"></p>
+    </div>
+    <!-- Legend/key -->
+    <div id="legend">
+        <h3>Legend</h3>
+        <div class="legend-item">
+            <div class="legend-dot dot-africa"></div>
+            <span>Africa</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-asia"></div>
+            <span>Asia</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-europe"></div>
+            <span>Europe</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-north-america"></div>
+            <span>North America</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-south-america"></div>
+            <span>South America</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-oceania"></div>
+            <span>Oceania</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot dot-antarctica"></div>
+            <span>Antarctica</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
